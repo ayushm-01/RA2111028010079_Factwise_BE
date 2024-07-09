@@ -16,6 +16,8 @@ def num_to_words(n):
             
     elif n == 1000:
         return "onethousand"
+    else:
+        return ""
 
 def count_letters():
     tot_letters = 0
@@ -24,5 +26,5 @@ def count_letters():
         tot_letters += len(word)
     return tot_letters
         
-tot_letters_used = count_letters
+tot_letters_used = count_letters()
 print("Total lettes used: ", tot_letters_used)
